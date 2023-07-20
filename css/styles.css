@@ -126,6 +126,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .nav-con-list {
@@ -174,10 +175,12 @@ p {
   .navigation-container {
     display: block;
 
+
   }
 
   .nav-con-list {
     text-align: center;
+    text-decoration: none;
   }
 
   .nav-con-list-group-elements {
@@ -321,6 +324,9 @@ p {
 
   position: relative;
   display: inline-block;
+
+
+  
 }
 
 .back {
@@ -351,10 +357,49 @@ p {
   width: 80%;
   padding: 2rem 0;
   margin: 0 auto;
+  
 }
 
 .games>img {
+  width:100%;
+
+}
+
+.game-img:hover .bg-hover{
+
+  opacity: .7;
+
+}
+
+.game-img{
+  position: relative;
+}
+
+.play-button{
+
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+width: 100px;
+height: 100px;
+
+ 
+
+}
+
+
+
+.bg-hover{
+  height: 100%;
   width: 100%;
+  background: #4e585a;
+ position:absolute;
+ top: 0%;
+ right: 0%;
+ opacity: 0;
+
 }
 
 @media screen and (max-width:768px) {
